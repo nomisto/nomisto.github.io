@@ -1,16 +1,25 @@
 ---
-title: "LinkExplorer: predicting, explaining and exploring links in large biomedical knowledge graphs"
+title: "Dataset Debt in Biomedical Language Modeling"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
+- Jason Fries
+- Natasha Seelam
+- Gabriel Altay
+- Leon Weber
+- Myungsun Kang
+- Debajyoti Datta
+- Ruisi Su
+- Samuele Garda
+- Bo Wang
 - admin
-- Adriano Barbosa-Silva
 - Matthias Samwald
+- Wojciech Kusa
 
 date: "2022-02-09T00:00:00Z"
-doi: "https://doi.org/10.1093/bioinformatics/btac068"
+doi: "http://dx.doi.org/10.18653/v1/2022.bigscience-1.10"
 
 # Schedule page publish date (NOT publication's date).
 publishDate:
@@ -19,18 +28,19 @@ publishDate:
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["2"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: In Bioinformatics
-publication_short: In Bioinformatics
+publication: "In Proceedings of BigScience Episode #5 -- Workshop on Challenges & Perspectives in Creating Large Language Models"
+publication_short: "In Proceedings of BigScience Episode #5 -- Workshop on Challenges & Perspectives in Creating Large Language Models"
 
-abstract: Machine learning algorithms for link prediction can be valuable tools for hypothesis generation. However, many current algorithms are black boxes or lack good user interfaces that could facilitate insight into why predictions are made. We present LinkExplorer, a software suite for predicting, explaining and exploring links in large biomedical knowledge graphs. LinkExplorer integrates our novel, rule-based link prediction engine SAFRAN, which was recently shown to outcompete other explainable algorithms and established black-box algorithms. Here, we demonstrate highly competitive evaluation results of our algorithm on multiple large biomedical knowledge graphs, and release a web interface that allows for interactive and intuitive exploration of predicted links and their explanations.
+abstract: "Large-scale language modeling and natural language prompting have demonstrated exciting capabilities for few and zero shot learning in NLP. However, translating these successes to specialized domains such as biomedicine remains challenging, due in part to biomedical NLP’s significant dataset debt – the technical costs associated with data that are not consistently documented or easily incorporated into popular machine learning frameworks at scale. To assess this debt, we crowdsourced curation of datasheets for 167 biomedical datasets. We find that only 13% of datasets are available via programmatic access and 30% lack any documentation on licensing and permitted reuse. Our dataset catalog is available at: https://tinyurl.com/bigbio22."
+
 
 # Summary. An optional shortened abstract.
-summary: In this paper, a web-based tool is introduced, which supports experts in the examination of explanations for predictions made by a rule-based link prediction approach.
+summary: This paper presents a crowdsourced catalogue of datasheets for 167 biomedical datasets.
 
-tags: [Knowledge Graph Completion, Link Prediction, Interpretable Link Prediction]
+tags: [Benchmarking, Datasets, Natural Language Processing]
 
 # Display this page in the Featured widget?
 featured: false
@@ -40,8 +50,8 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.biorxiv.org/content/10.1101/2022.01.09.475537v2'
-url_code: 'https://github.com/OpenBioLink/Explorer'
+url_pdf: 'https://aclanthology.org/2022.bigscience-1.10/'
+url_code: ''
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -61,8 +71,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects:
-- linkexplorer
+projects: ["bigbio"]
   
 ---
 
