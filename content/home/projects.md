@@ -29,8 +29,10 @@ content:
     tag: '*'
   - name: Personalized Medicine
     tag: Personalized Medicine
-  - name: Machine Learning
+  - name: Link Prediction
     tag: Link Prediction
+  - name: Natural Language Processing
+    tag: Natural Language Processing
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
