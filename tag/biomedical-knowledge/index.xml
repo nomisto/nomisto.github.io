@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Biomedical Knowledge |</title><link>https://example.com/tag/biomedical-knowledge/</link><atom:link href="https://example.com/tag/biomedical-knowledge/index.xml" rel="self" type="application/rss+xml"/><description>Biomedical Knowledge</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 01 Dec 2019 00:00:00 +0000</lastBuildDate><image><url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Biomedical Knowledge</title><link>https://example.com/tag/biomedical-knowledge/</link></image><item><title>OpenBioLink</title><link>https://example.com/project/openbiolink/</link><pubDate>Sun, 01 Dec 2019 00:00:00 +0000</pubDate><guid>https://example.com/project/openbiolink/</guid><description>&lt;p>OpenBioLink is a resource and evaluation framework for evaluating link prediction models on heterogeneous biomedical graph data. It contains benchmark datasets as well as tools for creating custom benchmarks and evaluating models.&lt;/p>
+&lt;p>The OpenBioLink benchmark aims to meet the following criteria:&lt;/p>
+&lt;ul>
+&lt;li>Openly available&lt;/li>
+&lt;li>Large-scale&lt;/li>
+&lt;li>Wide coverage of current biomedical knowledge and entity types&lt;/li>
+&lt;li>Standardized, balanced train-test split&lt;/li>
+&lt;li>Open-source code for benchmark dataset generation&lt;/li>
+&lt;li>Open-source code for evaluation (independent of model)&lt;/li>
+&lt;li>Integrating and differentiating multiple types of biological entities and relations (i.e., formalized as a heterogeneous graph)&lt;/li>
+&lt;li>Minimized information leakage between train and test sets (e.g., avoid inclusion of trivially inferable relations in the test set)&lt;/li>
+&lt;li>Coverage of true negative relations, where available&lt;/li>
+&lt;li>Differentiating high-quality data from noisy, low-quality data&lt;/li>
+&lt;li>Differentiating benchmarks for directed and undirected graphs in order to be applicable to a wide variety of link prediction methods&lt;/li>
+&lt;li>Clearly defined release cycle with versions of the benchmark and public leaderboard&lt;/li>
+&lt;/ul>
+&lt;p>The OpenBioLink2020 Dataset is a highly challenging benchmark dataset containing over 5 million positive and negative edges. The test set does not contain trivially predictable, inverse edges from the training set and does contain all different edge types, to provide a more realistic edge prediction scenario.&lt;/p>
+&lt;h2 id="datasets-summary">Datasets summary&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Dataset&lt;/th>
+&lt;th>Train&lt;/th>
+&lt;th>Test&lt;/th>
+&lt;th>Valid&lt;/th>
+&lt;th>Entities&lt;/th>
+&lt;th>Relations&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>directed, high quality&lt;/td>
+&lt;td>8.503.580&lt;/td>
+&lt;td>401.901&lt;/td>
+&lt;td>397.066&lt;/td>
+&lt;td>184.732&lt;/td>
+&lt;td>28&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>undirected, high quality&lt;/td>
+&lt;td>7.559.921&lt;/td>
+&lt;td>372.877&lt;/td>
+&lt;td>357.297&lt;/td>
+&lt;td>184.722&lt;/td>
+&lt;td>28&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>directed, no quality cutoff&lt;/td>
+&lt;td>51.636.927&lt;/td>
+&lt;td>2.079.139&lt;/td>
+&lt;td>2.474.921&lt;/td>
+&lt;td>486.998&lt;/td>
+&lt;td>32&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>undirected, no quality cutoff&lt;/td>
+&lt;td>41.383.093&lt;/td>
+&lt;td>2.010.662&lt;/td>
+&lt;td>1.932.436&lt;/td>
+&lt;td>486.998&lt;/td>
+&lt;td>32&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="baseline-results">Baseline results&lt;/h2>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:left">&lt;/th>
+&lt;th style="text-align:left">Model&lt;/th>
+&lt;th style="text-align:center">MRR&lt;/th>
+&lt;th style="text-align:center">h@1&lt;/th>
+&lt;th style="text-align:center">h@10&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Latent&lt;/td>
+&lt;td style="text-align:left">RESCAL&lt;/td>
+&lt;td style="text-align:center">&lt;strong>.320&lt;/strong>&lt;/td>
+&lt;td style="text-align:center">.212&lt;/td>
+&lt;td style="text-align:center">.544&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">TransE&lt;/td>
+&lt;td style="text-align:center">.280&lt;/td>
+&lt;td style="text-align:center">.175&lt;/td>
+&lt;td style="text-align:center">.500&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">DistMult&lt;/td>
+&lt;td style="text-align:center">.300&lt;/td>
+&lt;td style="text-align:center">.193&lt;/td>
+&lt;td style="text-align:center">.521&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">ComplEx&lt;/td>
+&lt;td style="text-align:center">.319&lt;/td>
+&lt;td style="text-align:center">.211&lt;/td>
+&lt;td style="text-align:center">&lt;strong>.547&lt;/strong>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">ConvE&lt;/td>
+&lt;td style="text-align:center">.288&lt;/td>
+&lt;td style="text-align:center">.186&lt;/td>
+&lt;td style="text-align:center">.510&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">RotatE&lt;/td>
+&lt;td style="text-align:center">.286&lt;/td>
+&lt;td style="text-align:center">.180&lt;/td>
+&lt;td style="text-align:center">.511&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td style="text-align:center">&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">Interpretable&lt;/td>
+&lt;td style="text-align:left">AnyBURL (Maximum)&lt;/td>
+&lt;td style="text-align:center">.277&lt;/td>
+&lt;td style="text-align:center">.192&lt;/td>
+&lt;td style="text-align:center">.457&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">AnyBURL (Noisy-OR)&lt;/td>
+&lt;td style="text-align:center">.159&lt;/td>
+&lt;td style="text-align:center">.098&lt;/td>
+&lt;td style="text-align:center">.295&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:left">&lt;/td>
+&lt;td style="text-align:left">SAFRAN*&lt;/td>
+&lt;td style="text-align:center">&lt;u>.306&lt;/u>&lt;/td>
+&lt;td style="text-align:center">&lt;u>&lt;strong>.214&lt;/strong>&lt;/u>&lt;/td>
+&lt;td style="text-align:center">&lt;u>.501&lt;/u>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Results are from &lt;a href="https://www.biorxiv.org/content/10.1101/2022.01.09.475537v2" target="_blank" rel="noopener">(LinkExplorer: Predicting, explaining and exploring links in large biomedical knowledge graphs; Ott et al)&lt;/a>. Embedding approaches were trained using &lt;a href="https://github.com/uma-pi1/kge" target="_blank" rel="noopener">LibKGE&lt;/a>. Best hyperparameters after extensive hyperparameter search can be found in the &lt;a href="https://www.biorxiv.org/content/biorxiv/early/2022/01/31/2022.01.09.475537/DC1/embed/media-1.pdf?download=true" target="_blank" rel="noopener">supplementary material&lt;/a> of the before mentioned paper.&lt;/p></description></item></channel></rss>

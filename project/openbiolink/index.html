@@ -1,0 +1,457 @@
+<!doctype html><html lang=en-us>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=generator content="Wowchemy 5.4.0 for Hugo">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=preload as=style href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media=print onload="this.media='all'">
+<meta name=author content="Simon Ott">
+<meta name=description content="A openly available large-scale biomedical knowledge graph.">
+<link rel=alternate hreflang=en-us href=https://example.com/project/openbiolink/>
+<meta name=theme-color content="#1565c0">
+<link rel=stylesheet href=/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin=anonymous media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css crossorigin=anonymous title=hl-light media=print onload="this.media='all'">
+<link rel=stylesheet href=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css crossorigin=anonymous title=hl-dark media=print onload="this.media='all'" disabled>
+<link rel=stylesheet href=/css/wowchemy.246129d782c938a644fe2d653d8a976f.css>
+<link rel=manifest href=/manifest.webmanifest>
+<link rel=icon type=image/png href=/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png>
+<link rel=apple-touch-icon type=image/png href=/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png>
+<link rel=canonical href=https://example.com/project/openbiolink/>
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:site" content="@nomisto_">
+<meta property="twitter:creator" content="@nomisto_">
+<meta property="og:site_name" content>
+<meta property="og:url" content="https://example.com/project/openbiolink/">
+<meta property="og:title" content="OpenBioLink | ">
+<meta property="og:description" content="A openly available large-scale biomedical knowledge graph."><meta property="og:image" content="https://example.com/project/openbiolink/featured.png">
+<meta property="twitter:image" content="https://example.com/project/openbiolink/featured.png"><meta property="og:locale" content="en-us">
+<meta property="article:published_time" content="2019-12-01T00:00:00+00:00">
+<meta property="article:modified_time" content="2019-12-01T00:00:00+00:00">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://example.com/project/openbiolink/"},"headline":"OpenBioLink","image":["https://example.com/project/openbiolink/featured.png"],"datePublished":"2019-12-01T00:00:00Z","dateModified":"2019-12-01T00:00:00Z","author":{"@type":"Person","name":"Simon Ott"},"publisher":{"@type":"Organization","name":"Medical University of Vienna","logo":{"@type":"ImageObject","url":"https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"}},"description":"A openly available large-scale biomedical knowledge graph."}</script>
+<title>OpenBioLink | </title>
+</head>
+<body id=top data-spy=scroll data-offset=70 data-target=#TableOfContents class=page-wrapper data-wc-page-id=a56bbad08011967c5ce379e6718225be>
+<script src=/js/wowchemy-init.min.8f76bdc9e086322ed5147724ebba3d06.js></script>
+<aside class=search-modal id=search>
+<div class=container>
+<section class=search-header>
+<div class="row no-gutters justify-content-between mb-3">
+<div class=col-6>
+<h1>Search</h1>
+</div>
+<div class="col-6 col-search-close">
+<a class=js-search href=# aria-label=Close><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
+</div>
+</div>
+<div id=search-box>
+<input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control aria-label=Search...>
+</div>
+</section>
+<section class=section-search-results>
+<div id=search-hits>
+</div>
+</section>
+</div>
+</aside>
+<div class=page-header>
+<header class=header--fixed>
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+<div class=container-xl>
+<div class="d-none d-lg-inline-flex">
+<a class=navbar-brand href=/></a>
+</div>
+<button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar-content aria-expanded=false aria-label="Toggle navigation">
+<span><i class="fas fa-bars"></i></span>
+</button>
+<div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+<a class=navbar-brand href=/></a>
+</div>
+<div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
+<ul class="navbar-nav d-md-inline-flex">
+<li class=nav-item>
+<a class=nav-link href=/#about><span>Home</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#projects><span>Projects</span></a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=/#publications><span>Publications</span></a>
+</li>
+</ul>
+</div>
+<ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+<li class=nav-item>
+<a class="nav-link js-search" href=# aria-label=Search><i class="fas fa-search" aria-hidden=true></i></a>
+</li>
+<li class="nav-item dropdown theme-dropdown">
+<a href=# class=nav-link data-toggle=dropdown aria-haspopup=true aria-label="Display preferences">
+<i class="fas fa-moon" aria-hidden=true></i>
+</a>
+<div class=dropdown-menu>
+<a href=# class="dropdown-item js-set-theme-light">
+<span>Light</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-dark">
+<span>Dark</span>
+</a>
+<a href=# class="dropdown-item js-set-theme-auto">
+<span>Automatic</span>
+</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+</div>
+<div class=page-body>
+<article class="article article-project">
+<div class="article-container pt-3">
+<h1>OpenBioLink</h1>
+<div class=article-metadata>
+<span class=article-date>
+Dec 1, 2019
+</span>
+</div>
+<div class="btn-links mb-3">
+<a class="btn btn-outline-primary btn-page-header" href=https://arxiv.org/abs/1912.04616 target=_blank rel=noopener>
+PDF
+</a>
+<a class="btn btn-outline-primary btn-page-header" href=https://github.com/OpenBioLink/OpenBioLink target=_blank rel=noopener>
+<i class="fab fa-github mr-1"></i>Code</a>
+</div>
+</div>
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style=max-width:512px;max-height:288px>
+<div style=position:relative>
+<img src=/project/openbiolink/featured_hu543bc2ac854d0950fa6967bf04f3c7b0_141240_720x2500_fit_q75_h2_lanczos_3.webp width=512 height=288 alt class=featured-image>
+</div>
+</div>
+<div class=article-container>
+<div class=article-style>
+<p>OpenBioLink is a resource and evaluation framework for evaluating link prediction models on heterogeneous biomedical graph data. It contains benchmark datasets as well as tools for creating custom benchmarks and evaluating models.</p>
+<p>The OpenBioLink benchmark aims to meet the following criteria:</p>
+<ul>
+<li>Openly available</li>
+<li>Large-scale</li>
+<li>Wide coverage of current biomedical knowledge and entity types</li>
+<li>Standardized, balanced train-test split</li>
+<li>Open-source code for benchmark dataset generation</li>
+<li>Open-source code for evaluation (independent of model)</li>
+<li>Integrating and differentiating multiple types of biological entities and relations (i.e., formalized as a heterogeneous graph)</li>
+<li>Minimized information leakage between train and test sets (e.g., avoid inclusion of trivially inferable relations in the test set)</li>
+<li>Coverage of true negative relations, where available</li>
+<li>Differentiating high-quality data from noisy, low-quality data</li>
+<li>Differentiating benchmarks for directed and undirected graphs in order to be applicable to a wide variety of link prediction methods</li>
+<li>Clearly defined release cycle with versions of the benchmark and public leaderboard</li>
+</ul>
+<p>The OpenBioLink2020 Dataset is a highly challenging benchmark dataset containing over 5 million positive and negative edges. The test set does not contain trivially predictable, inverse edges from the training set and does contain all different edge types, to provide a more realistic edge prediction scenario.</p>
+<h2 id=datasets-summary>Datasets summary</h2>
+<table>
+<thead>
+<tr>
+<th>Dataset</th>
+<th>Train</th>
+<th>Test</th>
+<th>Valid</th>
+<th>Entities</th>
+<th>Relations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>directed, high quality</td>
+<td>8.503.580</td>
+<td>401.901</td>
+<td>397.066</td>
+<td>184.732</td>
+<td>28</td>
+</tr>
+<tr>
+<td>undirected, high quality</td>
+<td>7.559.921</td>
+<td>372.877</td>
+<td>357.297</td>
+<td>184.722</td>
+<td>28</td>
+</tr>
+<tr>
+<td>directed, no quality cutoff</td>
+<td>51.636.927</td>
+<td>2.079.139</td>
+<td>2.474.921</td>
+<td>486.998</td>
+<td>32</td>
+</tr>
+<tr>
+<td>undirected, no quality cutoff</td>
+<td>41.383.093</td>
+<td>2.010.662</td>
+<td>1.932.436</td>
+<td>486.998</td>
+<td>32</td>
+</tr>
+</tbody>
+</table>
+<h2 id=baseline-results>Baseline results</h2>
+<table>
+<thead>
+<tr>
+<th style=text-align:left></th>
+<th style=text-align:left>Model</th>
+<th style=text-align:center>MRR</th>
+<th style=text-align:center>h@1</th>
+<th style=text-align:center>h@10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left></td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+<td></td>
+</tr>
+<tr>
+<td style=text-align:left>Latent</td>
+<td style=text-align:left>RESCAL</td>
+<td style=text-align:center><strong>.320</strong></td>
+<td style=text-align:center>.212</td>
+<td style=text-align:center>.544</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>TransE</td>
+<td style=text-align:center>.280</td>
+<td style=text-align:center>.175</td>
+<td style=text-align:center>.500</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>DistMult</td>
+<td style=text-align:center>.300</td>
+<td style=text-align:center>.193</td>
+<td style=text-align:center>.521</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>ComplEx</td>
+<td style=text-align:center>.319</td>
+<td style=text-align:center>.211</td>
+<td style=text-align:center><strong>.547</strong></td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>ConvE</td>
+<td style=text-align:center>.288</td>
+<td style=text-align:center>.186</td>
+<td style=text-align:center>.510</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>RotatE</td>
+<td style=text-align:center>.286</td>
+<td style=text-align:center>.180</td>
+<td style=text-align:center>.511</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left></td>
+<td style=text-align:center></td>
+<td style=text-align:center></td>
+<td></td>
+</tr>
+<tr>
+<td style=text-align:left>Interpretable</td>
+<td style=text-align:left>AnyBURL (Maximum)</td>
+<td style=text-align:center>.277</td>
+<td style=text-align:center>.192</td>
+<td style=text-align:center>.457</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>AnyBURL (Noisy-OR)</td>
+<td style=text-align:center>.159</td>
+<td style=text-align:center>.098</td>
+<td style=text-align:center>.295</td>
+</tr>
+<tr>
+<td style=text-align:left></td>
+<td style=text-align:left>SAFRAN*</td>
+<td style=text-align:center><u>.306</u></td>
+<td style=text-align:center><u><strong>.214</strong></u></td>
+<td style=text-align:center><u>.501</u></td>
+</tr>
+</tbody>
+</table>
+<p>Results are from <a href=https://www.biorxiv.org/content/10.1101/2022.01.09.475537v2 target=_blank rel=noopener>(LinkExplorer: Predicting, explaining and exploring links in large biomedical knowledge graphs; Ott et al)</a>. Embedding approaches were trained using <a href=https://github.com/uma-pi1/kge target=_blank rel=noopener>LibKGE</a>. Best hyperparameters after extensive hyperparameter search can be found in the <a href="https://www.biorxiv.org/content/biorxiv/early/2022/01/31/2022.01.09.475537/DC1/embed/media-1.pdf?download=true" target=_blank rel=noopener>supplementary material</a> of the before mentioned paper.</p>
+</div>
+<div class=article-tags>
+<a class="badge badge-light" href=/tag/knowledge-graph/>Knowledge Graph</a>
+<a class="badge badge-light" href=/tag/biomedical-knowledge/>Biomedical Knowledge</a>
+<a class="badge badge-light" href=/tag/link-prediction/>Link Prediction</a>
+</div>
+<div class=share-box>
+<ul class=share>
+<li>
+<a href="https://twitter.com/intent/tweet?url=https://example.com/project/openbiolink/&text=OpenBioLink" target=_blank rel=noopener class=share-btn-twitter aria-label=twitter>
+<i class="fab fa-twitter"></i>
+</a>
+</li>
+<li>
+<a href="https://www.facebook.com/sharer.php?u=https://example.com/project/openbiolink/&t=OpenBioLink" target=_blank rel=noopener class=share-btn-facebook aria-label=facebook>
+<i class="fab fa-facebook"></i>
+</a>
+</li>
+<li>
+<a href="mailto:?subject=OpenBioLink&body=https://example.com/project/openbiolink/" target=_blank rel=noopener class=share-btn-email aria-label=envelope>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://www.linkedin.com/shareArticle?url=https://example.com/project/openbiolink/&title=OpenBioLink" target=_blank rel=noopener class=share-btn-linkedin aria-label=linkedin-in>
+<i class="fab fa-linkedin-in"></i>
+</a>
+</li>
+<li>
+<a href="whatsapp://send?text=OpenBioLink%20https://example.com/project/openbiolink/" target=_blank rel=noopener class=share-btn-whatsapp aria-label=whatsapp>
+<i class="fab fa-whatsapp"></i>
+</a>
+</li>
+<li>
+<a href="https://service.weibo.com/share/share.php?url=https://example.com/project/openbiolink/&title=OpenBioLink" target=_blank rel=noopener class=share-btn-weibo aria-label=weibo>
+<i class="fab fa-weibo"></i>
+</a>
+</li>
+</ul>
+</div>
+<div class="media author-card content-widget-hr">
+<a href=https://example.com/><img class="avatar mr-3 avatar-circle" src=/authors/admin/avatar_hud9c6e1f0b80de0592af177e90ee5de02_50384_270x270_fill_q75_lanczos_center.jpg alt="Simon Ott"></a>
+<div class=media-body>
+<h5 class=card-title><a href=https://example.com/>Simon Ott</a></h5>
+<h6 class=card-subtitle>Graduate research assistant</h6>
+<p class=card-text>My research interests include machine learning, natural language processing and knowledge graphs.</p>
+<ul class=network-icon aria-hidden=true>
+<li>
+<a href=mailto:simonott@gmx.at>
+<i class="fas fa-envelope"></i>
+</a>
+</li>
+<li>
+<a href="https://scholar.google.com/citations?user=it76QxoAAAAJ&hl=de" target=_blank rel=noopener>
+<i class="fas fa-graduation-cap"></i>
+</a>
+</li>
+<li>
+<a href=https://github.com/nomisto target=_blank rel=noopener>
+<i class="fab fa-github"></i>
+</a>
+</li>
+<li>
+<a href=https://www.linkedin.com/in/simon-o-4a8b52183/ target=_blank rel=noopener>
+<i class="fab fa-linkedin"></i>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="article-widget content-widget-hr">
+<h3>Related</h3>
+<ul>
+<li><a href=/publication/linkexplorer/>LinkExplorer: predicting, explaining and exploring links in large biomedical knowledge graphs</a></li>
+<li><a href=/publication/safran/>SAFRAN: An interpretable, rule-based link prediction method outperforming embedding models</a></li>
+<li><a href=/project/linkexplorer/>LinkExplorer</a></li>
+<li><a href=/project/safran/>SAFRAN</a></li>
+<li><a href=/publication/openbiolink/>OpenBioLink: a benchmarking framework for large-scale biomedical link prediction</a></li>
+</ul>
+</div>
+<div class="project-related-pages content-widget-hr">
+<h2>Publications</h2>
+<div class="media stream-item view-compact">
+<div class=media-body>
+<div class="section-subheading article-title mb-0 mt-0">
+<a href=/publication/openbiolink/>OpenBioLink: a benchmarking framework for large-scale biomedical link prediction</a>
+</div>
+<a href=/publication/openbiolink/ class=summary-link>
+<div class=article-style>
+In this paper, an novel biomedical knowledge graph is introduced, covering a broad spectrum of biomedical entities.
+</div>
+</a>
+<div class="stream-meta article-metadata">
+<div>
+<span>
+Anna Breit</span>, <span class=author-highlighted>
+Simon Ott</span>, <span>
+Asan Agibetov</span>, <span>
+Matthias Samwald</span>
+</div>
+</div>
+</div>
+<div class=ml-3>
+<a href=/publication/openbiolink/>
+<img src=/publication/openbiolink/featured_hubc0cd101fa99cf75840bfcc995f42e60_78649_150x0_resize_q75_h2_lanczos_3.webp height=131 width=150 alt="OpenBioLink: a benchmarking framework for large-scale biomedical link prediction" loading=lazy>
+</a>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+<div class=page-footer>
+<div class=container>
+<footer class=site-footer>
+<p class=powered-by>
+Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target=_blank rel=noopener>Wowchemy</a> — the free, <a href=https://github.com/wowchemy/wowchemy-hugo-themes target=_blank rel=noopener>open source</a> website builder that empowers creators.
+</p>
+</footer>
+</div>
+</div>
+<div id=modal class="modal fade" role=dialog>
+<div class=modal-dialog>
+<div class=modal-content>
+<div class=modal-header>
+<h5 class=modal-title>Cite</h5>
+<button type=button class=close data-dismiss=modal aria-label=Close>
+<span aria-hidden=true>&#215;</span>
+</button>
+</div>
+<div class=modal-body>
+<pre><code class="tex hljs"></code></pre>
+</div>
+<div class=modal-footer>
+<a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank>
+<i class="fas fa-copy"></i> Copy
+</a>
+<a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank>
+<i class="fas fa-download"></i> Download
+</a>
+<div id=modal-error></div>
+</div>
+</div>
+</div>
+</div>
+<script src=/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js></script>
+<script src=https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js crossorigin=anonymous></script>
+<script id=search-hit-fuse-template type=text/x-template>
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+<script src=https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin=anonymous></script>
+<script src=https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin=anonymous></script>
+<script id=page-data type=application/json>{"use_headroom":true}</script>
+<script src=/js/wowchemy-headroom.1cb9e2fc8399acee94eab837265b73bf.js type=module></script>
+<script src=/en/js/wowchemy.min.247fd8f54253895301106e3006f53f38.js></script>
+</body>
+</html>
