@@ -117,9 +117,6 @@ marketing:
   google_site_verification: ''
   baidu_site_verification: ''
   baidu_tongji: ''
-cms:
-  branch: master
-  local_backend: false
 icon:
   pack:
     ai: true
